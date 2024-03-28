@@ -22,11 +22,13 @@ parseFloat(potatoChips);
 
 const message = `<h1>Math with numbers ${hotDogs} and ${potatoChips}</h1>
 <br>
-${hotDogs} + ${potatoChips}
+${hotDogs} + ${potatoChips} = ${+hotDogs + +potatoChips}
 <br>
-${hotDogs} * ${potatoChips}
+${hotDogs} * ${potatoChips} = ${hotDogs * potatoChips}
 <br>
-${hotDogs} / ${potatoChips}`
+${hotDogs} / ${potatoChips} = ${hotDogs / potatoChips}
+<br>
+${hotDogs} - ${potatoChips} = ${hotDogs - potatoChips}`
 ;
 
 // 7. Add another string to the message variable. 
@@ -45,6 +47,8 @@ ${hotDogs} / ${potatoChips}`
 // 10. Use the document.write() method to print the message variable 
 //     to the web page. Open the finished.png file in this workspace
 //     to see what the completed output should look like
+
+
 
 document.write(message);
 
