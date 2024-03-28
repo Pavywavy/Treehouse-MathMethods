@@ -1,11 +1,14 @@
 // 1. Attach this file -- math.js -- to the index.html file using a <script> tag
 
 // 2. Add an alert to announce the program with a message like "Let's do some math!"
-
+alert("Lets do some math!");
 // 3. Create a variable and use the prompt() method to collect a number from a visitor
+const hotDogs = prompt("How many hot dogs will you be eating?");
+const potatoChips = prompt("How many potato chips are you having?");
 
 // 4. Convert that value from a string to a floating point number
-
+parseFloat(hotDogs);
+parseFloat(potatoChips);
 // 5. Repeat steps 3 and 4 to create a second variable and collect a second number
 
 // 6. Create a new variable -- message -- which you'll use to build
@@ -16,6 +19,15 @@
 //    the values input from the user. Use string concatenation to create this
 //    and make sure you actually perform the math on the values by 
 //    using the + symbol to add their values together
+
+const message = `<h1>Math with numbers ${hotDogs} and ${potatoChips}</h1>
+<br>
+${hotDogs} + ${potatoChips}
+<br>
+${hotDogs} * ${potatoChips}
+<br>
+${hotDogs} / ${potatoChips}`
+;
 
 // 7. Add another string to the message variable. 
 //    The string should look something like this after concatenation:
@@ -34,9 +46,7 @@
 //     to the web page. Open the finished.png file in this workspace
 //     to see what the completed output should look like
 
-
-
-
+document.write(message);
 
 
 
